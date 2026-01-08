@@ -1,0 +1,13 @@
+.env
+*.pem
+*.key
+*.p12
+*.crt
+
+__pycache__/
+.venv/
+node_modules/
+.DS_Store
+
+# AWS関連（必要なら）
+.aws/
