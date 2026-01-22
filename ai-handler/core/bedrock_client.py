@@ -7,8 +7,8 @@ import os
 import boto3
 
 # 環境変数で切り替えできるようにしておく（運用で強い）
-DEFAULT_MODEL_ID = os.getenv("BEDROCK_MODEL_ID", "anthropic.claude-3-sonnet-20240229-v1:0")
-DEFAULT_REGION = os.getenv("AWS_REGION", "us-east-1")
+DEFAULT_MODEL_ID = os.getenv("BEDROCK_MODEL_ID", "jp.anthropic.claude-sonnet-4-5-20250929-v1:0")
+DEFAULT_REGION = os.getenv("AWS_REGION", "ap-northeast-1")
 
 
 def generate_answer(system_prompt: str, user_prompt: str) -> tuple[str, str]:

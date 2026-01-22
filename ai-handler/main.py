@@ -10,6 +10,9 @@ from core.danger_score import danger_score_from_type
 from core.prompt import build_system_prompt, build_user_prompt
 from core.bedrock_client import generate_answer
 
+import logging
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 
 
 def _parse_event(event: Dict[str, Any]) -> Dict[str, str]:
